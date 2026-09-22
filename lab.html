@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igra memorije</title>
+    <link rel="stylesheet" href="lab.css">
+    <script src="jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="lab.css">
+    <script src="lab.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-4 col-sm-5">
+                    <h2>IGRA MEMORIJE</h2>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-2">
+                    <div class="text-center" id="tajmerdiv">
+                        Tajmer: <span id="tajmer">00:00</span>
+                    </div>
+                    <p id="tezina"></p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-5">
+                    <h2><b>POENI: <span id="score"><b></b></span></b></h2>
+                </div>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col-12">
+                <hr>
+                <div class="text-center" id="slike">
+                    <table style="margin: auto;" class="text-center" id="tabela">
+
+                    </table>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="row text-center d-none" id="rez">
+            <h4>Tabela sa rezultatima</h4> <br>
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Igrač</th>
+                        <th>Br. poena</th>
+                        <th>Težina</th>
+                    </tr>
+                </thead>
+                <tbody id="scoreboard">
+                    
+                </tbody>
+            </table>
+        </div>
+        <footer>
+            <audio id="muzika" loop>
+                <source src="faraoni.mp3" type="audio/mpeg">
+            </audio>
+            <div class="row">
+                <div class="col-6">
+                    <button id="dugmeNazad" class="btn btn-lg dugme">
+                        nazad
+                    </button>
+                </div>
+                <div class="col-6">
+                    <button id="dugmeMuzika" class="btn btn-lg dugme">
+                        upali/ugasi muziku
+                    </button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
